@@ -144,4 +144,4 @@ while running:
         if gameplay and event.type == pygame.KEYUP and event.key == pygame.K_b and bullets_left > 0:
             bullets.append(bullet.get_rect(topleft=(player_x + 30, player_y + 10)))
             bullets_left -= 1
-    clock.tick(15)
+    clock.tick(30)
