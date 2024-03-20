@@ -4,7 +4,7 @@ clock = pygame.time.Clock()
 
 pygame.init()
 screen = pygame.display.set_mode((800, 450))  # flags=pygame.NOFRAME
-pygame.display.set_caption("Game Sofulik")
+pygame.display.set_caption("Running Warrior")
 icon = pygame.image.load('images/gameicon.png').convert_alpha()
 pygame.display.set_icon(icon)
 
