@@ -10,9 +10,13 @@ window_surface = pygame.display.set_mode((800, 600))
 
 manager = pygame_gui.UIManager((800, 600))
 
+login_label = pygame_gui.elements.UILabel(relative_rect=pygame.Rect((340, 160), (45, 50)),
+                                                          manager=manager, text="Логин", )
 username_text_entry = pygame_gui.elements.UITextEntryLine(relative_rect=pygame.Rect((340, 200), (150, 50)),
                                                           manager=manager)
-password_text_entry = pygame_gui.elements.UITextEntryLine(relative_rect=pygame.Rect((340, 250), (150, 50)),
+login_label = pygame_gui.elements.UILabel(relative_rect=pygame.Rect((340, 240), (55, 50)),
+                                                          manager=manager, text="Пароль", )
+password_text_entry = pygame_gui.elements.UITextEntryLine(relative_rect=pygame.Rect((340, 275), (150, 50)),
                                                           manager=manager)
 
 login_button = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((340, 330), (150, 50)), text='Вход',
@@ -75,7 +79,7 @@ while is_running:
 
     manager.update(time_delta)
 
-    window_surface.fill(pygame.Color('#dac4ee'))
+    window_surface.fill(pygame.Color('#40235f'))
 
     manager.draw_ui(window_surface)
 
