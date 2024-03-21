@@ -75,7 +75,7 @@ while is_running:
 
     manager.update(time_delta)
 
-    window_surface.fill(pygame.Color('#dac7b2'))
+    window_surface.fill(pygame.Color('#dac4ee'))
 
     manager.draw_ui(window_surface)
 

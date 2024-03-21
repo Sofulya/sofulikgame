@@ -133,12 +133,12 @@ while running:
         screen.blit(lose_label, (255, 20))
         screen.blit(restart_label, restart_label_rect)
         screen.blit(exit_label, exit_label_rect)
-        score_text = label.render('Ваш счёт: {}'.format(score), True, (255, 255, 255))
+        score_text = label.render('Ваш счёт: {}'.format(score), True, (188, 89, 31))
         score_text_rect = score_text.get_rect(center=(400, 200))
         screen.blit(score_text, score_text_rect)
 
         top_users = db.get_top_users()
-        leaderboard_font = pygame.font.Font('fonts/Geologica_Auto-Bold.ttf', 30)
+        leaderboard_font = pygame.font.Font('fonts/Geologica_Auto-Bold.ttf', 25)
         leaderboard_text = leaderboard_font.render('Таблица лидеров', True, (255, 255, 255))
         screen.blit(leaderboard_text, (280, 250))
         y_offset = 300
